@@ -5,7 +5,7 @@ def worstfit(mb, ps):
         worst_index = -1  # Initialize the index of the block with worst fit
         for j in range(len(mb)):
             if mb[j] >= ps[i]:
-                if worst_index == -1 or mb[j] > mb[worst_index]:
+                if worst_index == -1 or mb[j] > mb[worst_index]:#The only change wrt to best fit is this line
                     worst_index = j
 
         if worst_index != -1:
